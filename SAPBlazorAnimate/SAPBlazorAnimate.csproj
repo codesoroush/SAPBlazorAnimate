@@ -1,10 +1,10 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Copyright>By Soroush Asadi (SAP)</Copyright>
+    <Copyright>By Soroush Asadi (SAP) MIT</Copyright>
     <PackageProjectUrl>https://github.com/codesoroush/SAPBlazorAnimate</PackageProjectUrl>
     <RepositoryUrl>https://github.com/codesoroush/SAPBlazorAnimate</RepositoryUrl>
     <RepositoryType />
@@ -17,9 +17,11 @@
     <PackageIconUrl />
     <PackageReleaseNotes>powerfull component for animate html tags and blazor components.
 more info at github.</PackageReleaseNotes>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
-    <FileVersion>1.1.0.0</FileVersion>
-    <Version>1.1.0</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <Version>1.2.0</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageLicenseFile>License.md</PackageLicenseFile>
   </PropertyGroup>
 
 
@@ -31,6 +33,10 @@ more info at github.</PackageReleaseNotes>
 
   <ItemGroup>
     <None Include="..\..\..\..\Desktop\blazorlogo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\License.md">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
