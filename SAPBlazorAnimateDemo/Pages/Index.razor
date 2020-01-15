@@ -1,0 +1,67 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+<div class="row">
+    <SAPAnimate @ref="animatedElement1">
+        <div class="@animatedElement1.Animator" style="width:200px;height:200px;background-color:red;margin:5px">
+            <button style="margin:auto;" @onclick="btn1Click">HeartBeat</button>
+        </div>
+    </SAPAnimate>
+
+    <SAPAnimate @ref="animatedElement2">
+        <div class="@animatedElement2.Animator" style="width:200px;height:200px;background-color:green;margin:5px">
+            <button style="margin:auto;" @onclick="btn2Click">FlipInX</button>
+
+        </div>
+    </SAPAnimate>
+    <SAPAnimate @ref="animatedElement3">
+        <div class="@animatedElement3.Animator" style="width: 200px;
+        height: 200px;
+        background-color: yellow;
+        margin: 5px">
+
+            <button style="margin:auto;" @onclick="btn3Click">SlideOutUp</button>
+
+        </div>
+    </SAPAnimate>
+    <SAPAnimate @ref="animatedElement4">
+        <div class="@animatedElement4.Animator" style="width: 200px;
+        height: 200px;
+        background-color: blue;
+        margin: 5px">
+
+        <button style="margin:auto;" @onclick="btn4Click">ZoomIn</button>
+            </div>
+    </SAPAnimate>
+
+</div>
+
+
+
+@code
+{
+
+    SAPAnimate animatedElement1;
+    SAPAnimate animatedElement2;
+    SAPAnimate animatedElement3;
+    SAPAnimate animatedElement4;
+
+
+    void btn1Click()
+    {
+        animatedElement1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+    }
+      void btn2Click()
+    {
+        animatedElement2.Animate(AnimateBook.Flippers.FlipInX);
+    }
+      void btn3Click()
+    {
+        animatedElement3.Animate(AnimateBook.SlidingExits.SlideOutUp);
+    }
+      void btn4Click()
+    {
+        animatedElement4.Animate(AnimateBook.ZoomEntrances.ZoomIn);
+    }
+}

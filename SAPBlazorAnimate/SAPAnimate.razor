@@ -1,0 +1,25 @@
+﻿@ChildContent
+
+@code
+{
+    public string Animator { get; set; } = "";
+
+    [Parameter]
+    public RenderFragment ChildContent { get; set; }
+
+    public async void Animate(AnimateType type)
+    {
+        Animator = $" {type.ToString()} animated ";
+        await Task.Delay(1000);
+        Animator = "";
+        StateHasChanged();
+    }
+        public async void Animate(AnimateType type, TimeSpan delay)
+    {
+        Animator = $" {type.ToString()} animated ";
+        await Task.Delay(delay);
+        Animator = "";
+        StateHasChanged();
+    }
+
+}
