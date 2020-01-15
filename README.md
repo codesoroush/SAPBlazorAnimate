@@ -65,10 +65,8 @@ element1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
 ### License
 
 
-```
 Copyright (c) 2020 Soroush Asadi [MIT](https://github.com/codesoroush/SAPBlazorAnimate/blob/master/LICENSE) License
 
-```
 
 
 ### Related projects
