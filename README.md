@@ -4,7 +4,7 @@ Animate.css Library for Blazor
 
 Demo : 
 
-try demo [SAPBlazorAnimateDemo!](http://soroushasadi.com)
+[![Demo CountPages alpha](https://raw.githubusercontent.com/codesoroush/SAPBlazorAnimate/master/SAPBlazorAnimateDemo/wwwroot/demo/demo.gif)](https://raw.githubusercontent.com/codesoroush/SAPBlazorAnimate/master/SAPBlazorAnimateDemo/wwwroot/demo/demo.gif)
 
 ###### Usage
 1. Add SAPBlazorAnimate To Yout Project
