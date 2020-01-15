@@ -24,9 +24,9 @@ PM> Install-Package SAPBlazorAnimate -Version 1.1.0
 ###### Make elements animatable:
 
 ```Razor
-<SAPBlazorAnimate.SAPAnimate>
+<SAPAnimate>
 <h1> My Element</h1>
-</SAPBlazorAnimate.SAPAnimate>
+</SAPAnimate>
 ```
 ###### Define a refrence in @code section
 
@@ -40,11 +40,12 @@ SAPAnimate element1;
 ###### Set Refrence to SAPAnimate and map refrence class to element
 
 ```Razor
-<SAPBlazorAnimate.SAPAnimate @ref="element1"> 
+
+<SAPAnimate @ref="element1" > 
 
 <h1 class="@element1.Animator""> My Element</h1>
 
-</SAPBlazorAnimate.SAPAnimate>
+</SAPAnimate>
 ```
 ###### Animate element whenEver you want , with buttn click or AfterRenderAsync 
 
