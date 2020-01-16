@@ -2,21 +2,33 @@
 
 @code
 {
+    /// <summary>
+    /// put this varible at class element which must be animate
+    /// </summary>
     public string Animator { get; set; } = "";
 
     [Parameter]
     public RenderFragment ChildContent { get; set; }
 
-    public async void Animate(AnimateType type)
+    /// <summary>
+    /// start animate element (animate duration is 1 sec at default)
+    /// </summary>
+    /// <param name="animatebookType"></param>
+    public async void Animate(string animatebookType)
     {
-        Animator = $" {type.ToString()} animated ";
+        Animator = animatebookType;
         await Task.Delay(1000);
         Animator = "";
         StateHasChanged();
     }
-        public async void Animate(AnimateType type, TimeSpan delay)
+    /// <summary>
+    /// set delay for removing on animation
+    /// </summary>
+    /// <param name="animatebookType"></param>
+    /// <param name="delay"></param>
+        public async void Animate(string animatebookType, TimeSpan delay )
     {
-        Animator = $" {type.ToString()} animated ";
+        Animator = animatebookType;
         await Task.Delay(delay);
         Animator = "";
         StateHasChanged();

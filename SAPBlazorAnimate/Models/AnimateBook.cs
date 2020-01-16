@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SAPBlazorAnimate.Models;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,27 +8,27 @@ namespace SAPBlazorAnimate.Models
     #region Attention Seekers
     public class SAPAttentionSeekersGroup
     {
-        public AnimateType Bounce => AnimateType.bounce;
-        public AnimateType Flash => AnimateType.flash;
-        public AnimateType Pulse => AnimateType.pulse;
-        public AnimateType RubberBand => AnimateType.rubberBand;
-        public AnimateType Shake => AnimateType.shake;
-        public AnimateType Swing => AnimateType.swing;
-        public AnimateType Tada => AnimateType.tada;
-        public AnimateType Wobble => AnimateType.wobble;
-        public AnimateType Jello => AnimateType.jello;
-        public AnimateType HeartBeat => AnimateType.heartBeat;
+        public string Bounce => $" {AnimateType.bounce} animated ";
+        public string Flash => $" {AnimateType.flash} animated ";
+        public string Pulse => $" {AnimateType.pulse} animated ";
+        public string RubberBand => $" {AnimateType.rubberBand} animated ";
+        public string Shake => $" {AnimateType.shake} animated ";
+        public string Swing => $" {AnimateType.swing} animated ";
+        public string Tada => $" {AnimateType.tada} animated ";
+        public string Wobble => $" {AnimateType.wobble} animated ";
+        public string Jello => $" {AnimateType.jello} animated ";
+        public string HeartBeat => $" {AnimateType.heartBeat} animated ";
     }
     #endregion
 
     #region Bouncing Entrances
     public class SAPBouncingEntrancesGroup
     {
-        public AnimateType BounceIn => AnimateType.bounceIn;
-        public AnimateType BounceInDown => AnimateType.bounceInDown;
-        public AnimateType BounceInLeft => AnimateType.bounceInLeft;
-        public AnimateType BounceInRight => AnimateType.bounceInRight;
-        public AnimateType BounceInUp => AnimateType.bounceInUp;
+        public string BounceIn => $" {AnimateType.bounceIn} animated ";
+        public string BounceInDown => $" {AnimateType.bounceInDown} animated ";
+        public string BounceInLeft => $" {AnimateType.bounceInLeft} animated ";
+        public string BounceInRight => $" {AnimateType.bounceInRight} animated ";
+        public string BounceInUp => $" {AnimateType.bounceInUp} animated ";
 
     }
     #endregion
@@ -35,11 +36,11 @@ namespace SAPBlazorAnimate.Models
     #region Bouncing Exits
     public class SAPBouncingExitsGroup
     {
-        public AnimateType BounceOut => AnimateType.bounceOut;
-        public AnimateType BounceOutDown => AnimateType.bounceOutDown;
-        public AnimateType BounceOutLeft => AnimateType.bounceOutLeft;
-        public AnimateType BounceOutRight => AnimateType.bounceOutRight;
-        public AnimateType BounceOutUp => AnimateType.bounceOutUp;
+        public string BounceOut => $" {AnimateType.bounceOut} animated ";
+        public string BounceOutDown => $" {AnimateType.bounceOutDown} animated ";
+        public string BounceOutLeft => $" {AnimateType.bounceOutLeft} animated ";
+        public string BounceOutRight => $" {AnimateType.bounceOutRight} animated ";
+        public string BounceOutUp => $" {AnimateType.bounceOutUp} animated ";
 
     }
     #endregion
@@ -47,15 +48,15 @@ namespace SAPBlazorAnimate.Models
     #region Fading Entrances
     public class SAPFadingEntrancesGroup
     {
-        public AnimateType FadeIn => AnimateType.fadeIn;
-        public AnimateType FadeInDown => AnimateType.fadeInDown;
-        public AnimateType FadeInDownBig => AnimateType.fadeInDownBig;
-        public AnimateType FadeInLeft => AnimateType.fadeInLeft;
-        public AnimateType FadeInLeftBig => AnimateType.fadeInLeftBig;
-        public AnimateType FadeInRight => AnimateType.fadeInRight;
-        public AnimateType FadeInRightBig => AnimateType.fadeInRightBig;
-        public AnimateType FadeInUp => AnimateType.fadeInUp;
-        public AnimateType FadeInUpBig => AnimateType.fadeInUpBig;
+        public string FadeIn => $" {AnimateType.fadeIn} animated ";
+        public string FadeInDown => $" {AnimateType.fadeInDown} animated ";
+        public string FadeInDownBig => $" {AnimateType.fadeInDownBig} animated ";
+        public string FadeInLeft => $" {AnimateType.fadeInLeft} animated ";
+        public string FadeInLeftBig => $" {AnimateType.fadeInLeftBig} animated ";
+        public string FadeInRight => $" {AnimateType.fadeInRight} animated ";
+        public string FadeInRightBig => $" {AnimateType.fadeInRightBig} animated ";
+        public string FadeInUp => $" {AnimateType.fadeInUp} animated ";
+        public string FadeInUpBig => $" {AnimateType.fadeInUpBig} animated ";
 
 
     }
@@ -64,15 +65,15 @@ namespace SAPBlazorAnimate.Models
     #region Fading Exits
     public class SAPFadingExitsGroup
     {
-        public AnimateType FadeOut => AnimateType.fadeOut;
-        public AnimateType FadeOutDown => AnimateType.fadeOutDown;
-        public AnimateType FadeOutDownBig => AnimateType.fadeOutDownBig;
-        public AnimateType FadeOutLeft => AnimateType.fadeOutLeft;
-        public AnimateType FadeOutLeftBig => AnimateType.fadeOutLeftBig;
-        public AnimateType FadeOutRight => AnimateType.fadeOutRight;
-        public AnimateType FadeOutRightBig => AnimateType.fadeOutRightBig;
-        public AnimateType FadeOutUp => AnimateType.fadeOutUp;
-        public AnimateType FadeOutUpBig => AnimateType.fadeOutUpBig;
+        public string FadeOut => $" {AnimateType.fadeOut} animated ";
+        public string FadeOutDown => $" {AnimateType.fadeOutDown} animated ";
+        public string FadeOutDownBig => $" {AnimateType.fadeOutDownBig} animated ";
+        public string FadeOutLeft => $" {AnimateType.fadeOutLeft} animated ";
+        public string FadeOutLeftBig => $" {AnimateType.fadeOutLeftBig} animated ";
+        public string FadeOutRight => $" {AnimateType.fadeOutRight} animated ";
+        public string FadeOutRightBig => $" {AnimateType.fadeOutRightBig} animated ";
+        public string FadeOutUp => $" {AnimateType.fadeOutUp} animated ";
+        public string FadeOutUpBig => $" {AnimateType.fadeOutUpBig} animated ";
 
 
     }
@@ -81,11 +82,11 @@ namespace SAPBlazorAnimate.Models
     #region Flippers
     public class SAPFlippersGroup
     {
-        public AnimateType Flip => AnimateType.flip;
-        public AnimateType FlipInX => AnimateType.flipInX;
-        public AnimateType FlipInY => AnimateType.flipInY;
-        public AnimateType FlipOutX => AnimateType.flipOutX;
-        public AnimateType FlipOutY => AnimateType.flipOutY;
+        public string Flip => $" {AnimateType.flip} animated ";
+        public string FlipInX => $" {AnimateType.flipInX} animated ";
+        public string FlipInY => $" {AnimateType.flipInY} animated ";
+        public string FlipOutX => $" {AnimateType.flipOutX} animated ";
+        public string FlipOutY => $" {AnimateType.flipOutY} animated ";
 
 
 
@@ -95,8 +96,8 @@ namespace SAPBlazorAnimate.Models
     #region Light Speed
     public class SAPLightspeedGroup
     {
-        public AnimateType LightSpeedIn => AnimateType.lightSpeedIn;
-        public AnimateType LightSpeedOut => AnimateType.lightSpeedOut;
+        public string LightSpeedIn => $" {AnimateType.lightSpeedIn} animated ";
+        public string LightSpeedOut => $" {AnimateType.lightSpeedOut} animated ";
 
 
 
@@ -107,11 +108,11 @@ namespace SAPBlazorAnimate.Models
     #region Rotating Entrances
     public class SAPRotatingEntrancesGroup
     {
-        public AnimateType RotateIn => AnimateType.rotateIn;
-        public AnimateType RotateInDownLeft => AnimateType.rotateInDownLeft;
-        public AnimateType RotateInDownRight => AnimateType.rotateInDownRight;
-        public AnimateType RotateInUpLeft => AnimateType.rotateInUpLeft;
-        public AnimateType RotateInUpRight => AnimateType.rotateInUpRight;
+        public string RotateIn => $" {AnimateType.rotateIn} animated ";
+        public string RotateInDownLeft => $" {AnimateType.rotateInDownLeft} animated ";
+        public string RotateInDownRight => $" {AnimateType.rotateInDownRight} animated ";
+        public string RotateInUpLeft => $" {AnimateType.rotateInUpLeft} animated ";
+        public string RotateInUpRight => $" {AnimateType.rotateInUpRight} animated ";
 
 
 
@@ -121,11 +122,11 @@ namespace SAPBlazorAnimate.Models
     #region Rotating Exits
     public class SAPRotatingExitsGroup
     {
-        public AnimateType RotateOut => AnimateType.rotateOut;
-        public AnimateType RotateOutDownLeft => AnimateType.rotateOutDownLeft;
-        public AnimateType RotateOutDownRight => AnimateType.rotateOutDownRight;
-        public AnimateType RotateOutUpLeft => AnimateType.rotateOutUpLeft;
-        public AnimateType RotateOutUpRight => AnimateType.rotateOutUpRight;
+        public string RotateOut => $" {AnimateType.rotateOut} animated ";
+        public string RotateOutDownLeft => $" {AnimateType.rotateOutDownLeft} animated ";
+        public string RotateOutDownRight => $" {AnimateType.rotateOutDownRight} animated ";
+        public string RotateOutUpLeft => $" {AnimateType.rotateOutUpLeft} animated ";
+        public string RotateOutUpRight => $" {AnimateType.rotateOutUpRight} animated ";
 
 
 
@@ -135,10 +136,10 @@ namespace SAPBlazorAnimate.Models
     #region Sliding Entrances
     public class SAPSlidingEntrancesGroup
     {
-        public AnimateType SlideInUp => AnimateType.slideInUp;
-        public AnimateType SlideInDown => AnimateType.slideInDown;
-        public AnimateType SlideInLeft => AnimateType.slideInLeft;
-        public AnimateType SlideInRight => AnimateType.slideInRight;
+        public string SlideInUp => $" {AnimateType.slideInUp} animated ";
+        public string SlideInDown => $" {AnimateType.slideInDown} animated ";
+        public string SlideInLeft => $" {AnimateType.slideInLeft} animated ";
+        public string SlideInRight => $" {AnimateType.slideInRight} animated ";
 
 
 
@@ -148,10 +149,10 @@ namespace SAPBlazorAnimate.Models
     #region Sliding Exits
     public class SAPSlidingExitsGroup
     {
-        public AnimateType SlideOutUp => AnimateType.slideOutUp;
-        public AnimateType SlideOutDown => AnimateType.slideOutDown;
-        public AnimateType SlideOutLeft => AnimateType.slideOutLeft;
-        public AnimateType SlideOutRight => AnimateType.slideOutRight;
+        public string SlideOutUp => $" {AnimateType.slideOutUp} animated ";
+        public string SlideOutDown => $" {AnimateType.slideOutDown} animated ";
+        public string SlideOutLeft => $" {AnimateType.slideOutLeft} animated ";
+        public string SlideOutRight => $" {AnimateType.slideOutRight} animated ";
 
 
 
@@ -161,11 +162,11 @@ namespace SAPBlazorAnimate.Models
     #region Zoom Entrances
     public class SAPZoomEntrancesGroup
     {
-        public AnimateType ZoomIn => AnimateType.zoomIn;
-        public AnimateType ZoomInDown => AnimateType.zoomInDown;
-        public AnimateType ZoomInLeft => AnimateType.zoomInLeft;
-        public AnimateType ZoomInRight => AnimateType.zoomInRight;
-        public AnimateType ZoomInUp => AnimateType.zoomInUp;
+        public string ZoomIn => $" {AnimateType.zoomIn} animated ";
+        public string ZoomInDown => $" {AnimateType.zoomInDown} animated ";
+        public string ZoomInLeft => $" {AnimateType.zoomInLeft} animated ";
+        public string ZoomInRight => $" {AnimateType.zoomInRight} animated ";
+        public string ZoomInUp => $" {AnimateType.zoomInUp} animated ";
 
 
 
@@ -175,11 +176,11 @@ namespace SAPBlazorAnimate.Models
     #region Zoom Exits
     public class SAPZoomExitsGroup
     {
-        public AnimateType ZoomOut => AnimateType.zoomOut;
-        public AnimateType ZoomOutDown => AnimateType.zoomOutDown;
-        public AnimateType ZoomOutLeft => AnimateType.zoomOutLeft;
-        public AnimateType ZoomOutRight => AnimateType.zoomOutRight;
-        public AnimateType ZoomOutUp => AnimateType.zoomOutUp;
+        public string ZoomOut => $" {AnimateType.zoomOut} animated ";
+        public string ZoomOutDown => $" {AnimateType.zoomOutDown} animated ";
+        public string ZoomOutLeft => $" {AnimateType.zoomOutLeft} animated ";
+        public string ZoomOutRight => $" {AnimateType.zoomOutRight} animated ";
+        public string ZoomOutUp => $" {AnimateType.zoomOutUp} animated ";
 
 
 
@@ -189,10 +190,10 @@ namespace SAPBlazorAnimate.Models
     #region Specials
     public class SAPSpecialsGroup
     {
-        public AnimateType Hinge => AnimateType.hinge;
-        public AnimateType JackInTheBox => AnimateType.jackInTheBox;
-        public AnimateType RollIn => AnimateType.rollIn;
-        public AnimateType RollOut => AnimateType.rollOut;
+        public string Hinge => $" {AnimateType.hinge} animated ";
+        public string JackInTheBox => $" {AnimateType.jackInTheBox} animated ";
+        public string RollIn => $" {AnimateType.rollIn} animated ";
+        public string RollOut => $" {AnimateType.rollOut} animated ";
 
 
 
