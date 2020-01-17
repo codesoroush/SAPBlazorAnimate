@@ -43,7 +43,7 @@ SAPAnimate element1;
 
 <SAPAnimate @ref="element1" > 
 
-<h1 class="@element1.Animator""> My Element</h1>
+<h1 class="@element1.Animator"> My Element</h1>
 
 </SAPAnimate>
 ```
