@@ -9,7 +9,7 @@ Demo :
 ###### Usage
 1. Add SAPBlazorAnimate To Yout Project
 ```
-PM> Install-Package SAPBlazorAnimate -Version 1.2.1
+PM> Install-Package SAPBlazorAnimate -Version 1.2.2
 ```
 2. Include relevant stylesheet either in your _host.cshtml (server-side blazor) or index.html (client-side blazor)
 ```

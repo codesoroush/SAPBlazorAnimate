@@ -17,9 +17,9 @@
     <PackageIconUrl />
     <PackageReleaseNotes>powerfull component for animate html tags and blazor components.
 more info at github.</PackageReleaseNotes>
-    <AssemblyVersion>1.2.1.0</AssemblyVersion>
-    <FileVersion>1.2.1.0</FileVersion>
-    <Version>1.2.1</Version>
+    <AssemblyVersion>1.2.2.0</AssemblyVersion>
+    <FileVersion>1.2.2.0</FileVersion>
+    <Version>1.2.2</Version>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.md</PackageLicenseFile>
   </PropertyGroup>
