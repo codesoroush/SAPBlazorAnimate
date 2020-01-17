@@ -22,9 +22,9 @@ namespace SAPBlazorAnimate.Models
     #endregion
 
     #region Bouncing Entrances
-    public class SAPBouncingEntrancesGroup
+    public  class SAPBouncingEntrancesGroup
     {
-        public string BounceIn => $" {AnimateType.bounceIn} animated ";
+        public string BounceIn = $" {AnimateType.bounceIn} animated ";
         public string BounceInDown => $" {AnimateType.bounceInDown} animated ";
         public string BounceInLeft => $" {AnimateType.bounceInLeft} animated ";
         public string BounceInRight => $" {AnimateType.bounceInRight} animated ";

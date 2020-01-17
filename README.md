@@ -58,8 +58,11 @@ element1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
 }
 ```
 
+###### Direct Use For Elements On afetr page render (sample)
 
-
+```Razor
+<h1 class="@AnimateBook.Flippers.Flip"> Hello World</h1>
+```
 
 <hr />
 
