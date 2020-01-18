@@ -34,7 +34,7 @@ SAPAnimate element1;
 </SAPAnimate>
 
 
-6.Animate element whenEver you want , with buttn click or AfterRenderAsync :
+6.Animate element whenever you want , with buttun click or AfterRenderAsync :
 
 
 void btn1Click()
@@ -47,7 +47,18 @@ element1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
 
 ----------------------------------
 
-Direct Use For Elements On afetr page render (sample)
+TIP 1 :  Control Start Animation Speed With This Modes : Fast , Faster , Slow , Slower
+
+void btn1Click()
+{
+
+element1.Animate(AnimateBook.AttentionSeekers.HeartBeat.Faster());
+
+}
+
+----------------------------------
+
+TIP 2 : Direct Use For Elements On fater page render (sample)
 
 <h1 class="@AnimateBook.Flippers.Flip"> Hello World</h1>
 

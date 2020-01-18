@@ -15,12 +15,11 @@
     <ApplicationIcon>blazorlogo_WuJ_icon.ico</ApplicationIcon>
     <PackageIcon>blazorlogo.png</PackageIcon>
     <PackageIconUrl />
-    <PackageReleaseNotes>powerfull component for animate html tags and blazor components.
-more info at github.</PackageReleaseNotes>
-    <AssemblyVersion>1.2.5.0</AssemblyVersion>
-    <FileVersion>1.2.5.0</FileVersion>
-    <Version>1.2.5</Version>
-    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>added fast , faster , slow , slower animation modes</PackageReleaseNotes>
+    <AssemblyVersion>1.2.6.0</AssemblyVersion>
+    <FileVersion>1.2.6.0</FileVersion>
+    <Version>1.2.6</Version>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageLicenseFile>License.md</PackageLicenseFile>
   </PropertyGroup>
   <ItemGroup>

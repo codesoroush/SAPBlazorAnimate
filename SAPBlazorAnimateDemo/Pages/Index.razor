@@ -1,6 +1,6 @@
 ﻿@page "/"
 
-<h1 class="@AnimateBook.Specials.JackInTheBox">Hello, world!</h1>
+<h1 class="@AnimateBook.Lightspeed.LightSpeedIn.Faster()">Hello, world!</h1>
 
 <div class="row">
     <SAPAnimate @ref="animatedElement1">
@@ -37,6 +37,32 @@
 
 </div>
 
+<div class="row">
+    <div class="col-md-12">
+        <h2>Control Animation Start Speed : Fast/Slow Sample</h2>
+        <p>Modes : Fast , Faster , Slow , Slower</p>
+
+    </div>
+    <SAPAnimate @ref="animatedElement5">
+        <div class="@animatedElement5.Animator" style="width: 200px;
+        height: 200px;
+        background-color: gray;
+        margin: 5px">
+
+            <button style="margin:auto;" @onclick="btn5Click">Slower ZoomIn</button>
+        </div>
+    </SAPAnimate>
+    <SAPAnimate @ref="animatedElement6">
+        <div class="@animatedElement6.Animator" style="width: 200px;
+        height: 200px;
+        background-color: salmon;
+        margin: 5px">
+
+            <button style="margin:auto;" @onclick="btn6Click">Faster ZoomIn</button>
+        </div>
+    </SAPAnimate>
+</div>
+
 
 
 @code
@@ -46,6 +72,8 @@
     SAPAnimate animatedElement2;
     SAPAnimate animatedElement3;
     SAPAnimate animatedElement4;
+    SAPAnimate animatedElement5;
+    SAPAnimate animatedElement6;
 
 
     void btn1Click()
@@ -63,5 +91,13 @@
       void btn4Click()
     {
         animatedElement4.Animate(AnimateBook.ZoomEntrances.ZoomIn);
+    }
+       void btn5Click()
+    {
+        animatedElement5.Animate(AnimateBook.ZoomEntrances.ZoomIn.Slower());
+    }
+       void btn6Click()
+    {
+        animatedElement6.Animate(AnimateBook.ZoomEntrances.ZoomIn.Faster());
     }
 }

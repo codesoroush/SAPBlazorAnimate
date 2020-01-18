@@ -24,5 +24,22 @@ namespace SAPBlazorAnimate
         public static SAPZoomEntrancesGroup ZoomEntrances = new SAPZoomEntrancesGroup();
         public static SAPZoomExitsGroup ZoomExits = new SAPZoomExitsGroup();
         public static SAPSpecialsGroup Specials = new SAPSpecialsGroup();
+
+        public static string Fast(this string value)
+        {
+            return value + "fast "; 
+        }
+        public static string Faster(this string value)
+        {
+            return value + "faster ";
+        }
+        public static string Slow(this string value)
+        {
+            return value + "slow ";
+        }
+        public static string Slower(this string value)
+        {
+            return value + "slower ";
+        }
     }
 }

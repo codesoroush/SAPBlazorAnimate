@@ -9,7 +9,7 @@ Demo :
 ###### Usage
 1. Add SAPBlazorAnimate To Your Project
 ```
-PM> Install-Package SAPBlazorAnimate -Version 1.2.5
+PM> Install-Package SAPBlazorAnimate -Version 1.2.6
 ```
 2. Include relevant stylesheet either in your _host.cshtml (server-side blazor) or index.html (client-side blazor)
 ```
@@ -47,7 +47,7 @@ SAPAnimate element1;
 
 </SAPAnimate>
 ```
-###### Animate element whenEver you want , with buttn click or AfterRenderAsync 
+###### Animate element whenever you want , with buttn click or AfterRenderAsync 
 
 ```Razor
 void btn1Click()
@@ -58,10 +58,28 @@ element1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
 }
 ```
 
+
+###### Control Start Animation Speed With This Modes : Fast , Faster , Slow , Slower
+```Razor
+void btn1Click()
+{
+
+element1.Animate(AnimateBook.AttentionSeekers.HeartBeat.Faster());
+
+}
+```
+
+
 ###### Direct Use For Elements On after page render (sample)
 
 ```Razor
 <h1 class="@AnimateBook.Flippers.Flip"> Hello World</h1>
+```
+
+OR with slow speed
+
+```Razor
+<h1 class="@AnimateBook.Flippers.Flip.Slow()"> Hello World</h1>
 ```
 
 <hr />
