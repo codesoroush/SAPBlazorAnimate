@@ -7,7 +7,7 @@ Demo :
 [![Demo CountPages alpha](https://raw.githubusercontent.com/codesoroush/SAPBlazorAnimate/master/SAPBlazorAnimateDemo/wwwroot/demo/demo.gif)](https://raw.githubusercontent.com/codesoroush/SAPBlazorAnimate/master/SAPBlazorAnimateDemo/wwwroot/demo/demo.gif)
 
 ###### Usage
-1. Add SAPBlazorAnimate To Yout Project
+1. Add SAPBlazorAnimate To Your Project
 ```
 PM> Install-Package SAPBlazorAnimate -Version 1.2.5
 ```
