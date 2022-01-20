@@ -1,4 +1,5 @@
-﻿@page "/"
+﻿@using System.Timers;
+@page "/"
 
 <h1 class="@AnimateBook.Lightspeed.LightSpeedIn.Faster()">Hello, world!</h1>
 
@@ -67,6 +68,8 @@
 
 @code
 {
+    private Timer _timer;
+    private int _counter = 0;
 
     SAPAnimate animatedElement1;
     SAPAnimate animatedElement2;
@@ -75,28 +78,72 @@
     SAPAnimate animatedElement5;
     SAPAnimate animatedElement6;
 
+    protected override async Task OnInitializedAsync()
+    {
+
+        _timer = new Timer(5000);
+
+
+
+        _timer.Elapsed += (sender, e) =>
+        {
+            _counter++;
+            switch (_counter)
+            {
+                case 1:
+                    animatedElement1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    break;
+                case 2:
+                    animatedElement2.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    break;
+                case 3:
+                    animatedElement3.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    break;
+                case 4:
+                    animatedElement4.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    break;
+                case 5:
+                    animatedElement5.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    break;
+                case 6:
+                    animatedElement6.Animate(AnimateBook.AttentionSeekers.HeartBeat);
+                    _counter = 0;
+                    break;
+                default: 
+                    _counter = 0;
+                    break;
+            }
+
+
+            InvokeAsync(StateHasChanged);
+        };
+
+        _timer.Start();
+
+        await base.OnInitializedAsync();
+    }
 
     void btn1Click()
     {
         animatedElement1.Animate(AnimateBook.AttentionSeekers.HeartBeat);
     }
-      void btn2Click()
+    void btn2Click()
     {
         animatedElement2.Animate(AnimateBook.Flippers.FlipInX);
     }
-      void btn3Click()
+    void btn3Click()
     {
         animatedElement3.Animate(AnimateBook.SlidingExits.SlideOutUp);
     }
-      void btn4Click()
+    void btn4Click()
     {
         animatedElement4.Animate(AnimateBook.ZoomEntrances.ZoomIn);
     }
-       void btn5Click()
+    void btn5Click()
     {
         animatedElement5.Animate(AnimateBook.ZoomEntrances.ZoomIn.Slower());
     }
-       void btn6Click()
+    void btn6Click()
     {
         animatedElement6.Animate(AnimateBook.ZoomEntrances.ZoomIn.Faster());
     }
